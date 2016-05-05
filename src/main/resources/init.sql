@@ -1,0 +1,1 @@
+INSERT INTO Esport (id, sportName) VALUES (483274, 'Starcraft 2');

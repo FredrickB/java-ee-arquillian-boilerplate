@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:composition template="templates/main.xhtml">
+
+	<ui:define name="content">
+
+        <h3>All dem esports</h3>
+        <ui:repeat value="#{esportController.all}" var="esport">
+            <h:outputLabel for="esportId" value="Id"/>
+            <h:outputText value=": "/>
+            <h:outputText id="esportId" value="#{esport.id}"/>
+
+            <br/>
+            <h:outputLabel for="name" value="Name"/>
+            <h:outputText value=": "/>
+            <h:outputText id="name" value="#{esport.sportName}"/>
+
+            <hr/>
+        </ui:repeat>
+
+		<h:form>
+			<h:outputLabel value="Enter name of Esport" for="esportName"/>
+            <br/>
+			<h:inputText id="esportName" value="#{esportController.esport.sportName}"/>
+			<br/>
+			<h:commandButton value="Save Esports!" action="#{esportController.save()}"/>
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+	<persistence-unit name="PUnit" transaction-type="JTA">
+		<jta-data-source>jdbc/__default</jta-data-source>
+
+		<properties>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			<property name="hibernate.connection.url" value="jdbc:derby:main;create=true;" />
+			<property name="hibernate.connection.user" value="App" />
+			<property name="hibernate.connection.password" value=""/>
+			<property name="eclipselink.logging.level" value="INFO"/>
+		</properties>
+	</persistence-unit>
+
+</persistence>
