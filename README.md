@@ -18,4 +18,8 @@ Spin up embedded wildfly with `mvn wildfly:run`
 
 
 ## Testing
-Tests can be ran with `mvn verify` or setup a run configuration in IDEA (screenshots provided).
+Tests can be ran with `mvn verify` or setup a run configuration in IDEA (screenshots provided). 
+
+### When configuring for IDEA
+- Ensure your package specification is high enough in the hierarchy to include all tests. 
+Specify this in the field "Package" (shown in "idea_container_configuration_run_configuration.png").
