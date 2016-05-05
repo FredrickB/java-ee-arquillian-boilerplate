@@ -9,12 +9,15 @@ as the chosen container.
 
 This is by no means the best setup, but serves as a minimal simple starting point.
 
+The project is still a work in progress.
+
 ## Requirements
 - Java 8
 - Maven
 
 ## Development
-Spin up embedded wildfly with `mvn wildfly:run`
+Spin up embedded wildfly with `mvn wildfly:run`, then go to [http://localhost:8080/arquillian-test/index.jsf]
+(http://localhost:8080/arquillian-test/index.jsf)
 
 
 ## Testing
