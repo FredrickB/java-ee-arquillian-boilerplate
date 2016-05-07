@@ -1,5 +1,5 @@
 # Why?
-Created to reduce time and frustration usually found with setting up development and testing environment
+Created to reduce time spent with configuration when setting up development and testing environment
 for Java EE web applications.
 
 Project provides a minimal footprint boilerplate that allows for jumping straight into development.
